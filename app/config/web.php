@@ -17,6 +17,11 @@ $config = [
             'traceLevel' => YII_DEBUG ? 3 : 0,
         ],
     ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {

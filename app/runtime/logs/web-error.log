@@ -59,3 +59,764 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-12 14:40:26 [::1][-][d5950c50183e5f4d4ee2c463e526623e][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/index".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/index', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-12 14:40:26 [::1][-][d5950c50183e5f4d4ee2c463e526623e][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    'PHPSESSID' => 'd5950c50183e5f4d4ee2c463e526623e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; PHPSESSID=d5950c50183e5f4d4ee2c463e526623e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '59814'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449920426.15
+    'REQUEST_TIME' => 1449920426
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 14:45:53 [::1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\modules\admin\controllers\DashboardController' in file: /Users/work/domains/maps/app/modules/admin/controllers/DashboardController.php. Namespace missing?' in /Users/work/domains/maps/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\modules\\adm...')
+#1 [internal function]: spl_autoload_call('app\\modules\\adm...')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(563): class_exists('app\\modules\\adm...')
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('dashboard')
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(513): yii\base\Module->createController('dashboard/index')
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('admin/dashboard...')
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/dashboard...', Array)
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#9 {main}
+2015-12-12 14:45:53 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    'PHPSESSID' => 'd5950c50183e5f4d4ee2c463e526623e'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; PHPSESSID=d5950c50183e5f4d4ee2c463e526623e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '59880'
+    'REDIRECT_URL' => '/admin/dashboard/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/dashboard/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449920753.21
+    'REQUEST_TIME' => 1449920753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 14:49:15 [::1][-][d5950c50183e5f4d4ee2c463e526623e][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/index".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/index', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-12 14:49:15 [::1][-][d5950c50183e5f4d4ee2c463e526623e][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    'PHPSESSID' => 'd5950c50183e5f4d4ee2c463e526623e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; PHPSESSID=d5950c50183e5f4d4ee2c463e526623e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '59944'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449920955.78
+    'REQUEST_TIME' => 1449920955
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 14:53:45 [::1][-][d5950c50183e5f4d4ee2c463e526623e][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "фвьшт/index".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('\xD1\x84\xD0\xB2\xD1\x8C\xD1\x88\xD1\x82/inde...', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-12 14:53:45 [::1][-][d5950c50183e5f4d4ee2c463e526623e][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    'PHPSESSID' => 'd5950c50183e5f4d4ee2c463e526623e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; PHPSESSID=d5950c50183e5f4d4ee2c463e526623e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60151'
+    'REDIRECT_URL' => '/фвьшт'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/%D1%84%D0%B2%D1%8C%D1%88%D1%82'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449921225.88
+    'REQUEST_TIME' => 1449921225
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:13:49 [::1][-][d5950c50183e5f4d4ee2c463e526623e][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/app/models/LoginForm.php:73
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:13:49 [::1][-][d5950c50183e5f4d4ee2c463e526623e][info][application] $_POST = [
+    '_csrf' => 'cUJyOUFhYmESEStKKhIgBTwwSm8eMw4CAyxGUBgqCywyAEpNKjQsEA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    'PHPSESSID' => 'd5950c50183e5f4d4ee2c463e526623e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '196'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://maps'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://maps/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; PHPSESSID=d5950c50183e5f4d4ee2c463e526623e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60412'
+    'REDIRECT_URL' => '/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922429.01
+    'REQUEST_TIME' => 1449922429
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:14:22 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:14:22 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60424'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922462.27
+    'REQUEST_TIME' => 1449922462
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:15:15 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:15:15 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60443'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922515.22
+    'REQUEST_TIME' => 1449922515
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:17:20 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:17:20 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60473'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922640.49
+    'REQUEST_TIME' => 1449922640
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:19:12 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:19:11 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60497'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922751.93
+    'REQUEST_TIME' => 1449922751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:19:45 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:19:45 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60512'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922785.75
+    'REQUEST_TIME' => 1449922785
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:20:33 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:20:33 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922833.29
+    'REQUEST_TIME' => 1449922833
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:20:42 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:20:42 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60525'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922842.81
+    'REQUEST_TIME' => 1449922842
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:21:09 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:21:09 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922869.71
+    'REQUEST_TIME' => 1449922869
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:21:53 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:21:53 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60542'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922913.41
+    'REQUEST_TIME' => 1449922913
+    'argv' => []
+    'argc' => 0
+]
+2015-12-12 15:22:08 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\User' not found' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/User.php:614
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-12 15:22:08 [::1][-][47fb7e0ae81f98951e9e883aabd58f36][info][application] $_COOKIE = [
+    '_csrf' => 'e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq\";}'
+    '_identity' => 'bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    'PHPSESSID' => '47fb7e0ae81f98951e9e883aabd58f36'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '100'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=e8708eaaf2fe00d1568f73b754c0931e0a52d7e34f39f01c5cbe6eb5540202bfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22cSYsksBdMr8V_Rlcrn4iYKiMCB8tkUNq%22%3B%7D; _identity=bdbb8321b2128878c909685d3c3a35278fa129bec0a5429a4913e0dd05c9262ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; PHPSESSID=47fb7e0ae81f98951e9e883aabd58f36'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '60544'
+    'REDIRECT_URL' => '/admin/dashboard'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/dashboard'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1449922928.39
+    'REQUEST_TIME' => 1449922928
+    'argv' => []
+    'argc' => 0
+]

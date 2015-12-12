@@ -4,6 +4,9 @@ namespace app\models;
 
 class User extends \yii\base\Object implements \yii\web\IdentityInterface
 {
+    const GROUP_USER = 'user';
+    const GROUP_ADMIN = 'admin';
+
     public $id;
     public $username;
     public $password;
