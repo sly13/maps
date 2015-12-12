@@ -8,8 +8,20 @@ $params = ArrayHelper::merge(
 );
 
 return [
-    'basePath' => dirname(__DIR__),
+    'basePath' => dirname(dirname(__DIR__)),
+    'runtimePath' => dirname(dirname(__DIR__)) . '/runtime',
+    'viewPath' => dirname(__DIR__) . '/views',
+
+    'name' => 'blablaflat',
+    'language' => 'ru-RU',
+
+    'aliases' => [
+        '@app' => dirname(__DIR__),
+        '@home' => '/site/index',
+    ],
+
     'bootstrap' => ['log'],
+
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
