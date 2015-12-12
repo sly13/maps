@@ -3,12 +3,12 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-use app\assets\AdminAsset;
+use app\modules\admin\assets\ThemeAsset;
 use yii\helpers\Html;
 
 $this->title = 'Админка';
 
-AdminAsset::register($this);
+ThemeAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
