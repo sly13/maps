@@ -23,6 +23,10 @@ return [
     'bootstrap' => ['log'],
 
     'components' => [
+        'user' => [
+            'identityClass' => 'app\models\User',
+            'enableAutoLogin' => true
+        ],
         'db' => [
             'class' => 'yii\db\Connection',
             'charset' => 'utf8',

@@ -47456,3 +47456,2970 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-13 19:48:52 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: auth/signup' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/signup', Array)
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-13 19:48:52 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52043'
+    'REDIRECT_URL' => '/auth/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025332.21
+    'REQUEST_TIME' => 1450025332
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 19:48:58 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /Users/work/domains/maps/app/views/auth/sign-up.php' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\AuthController))
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('sign-up', Array, Object(app\controllers\AuthController))
+#2 /Users/work/domains/maps/app/controllers/AuthController.php(26): yii\base\Controller->render('sign-up')
+#3 [internal function]: app\controllers\AuthController->actionSignUp()
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('sign-up', Array)
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/sign-up', Array)
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#10 {main}
+2015-12-13 19:48:58 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52044'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025338.47
+    'REQUEST_TIME' => 1450025338
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 19:49:12 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in /Users/work/domains/maps/app/views/auth/sign-up.php:14
+Stack trace:
+#0 /Users/work/domains/maps/app/views/auth/sign-up.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/work/dom...', 14, Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\AuthController))
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('sign-up', Array, Object(app\controllers\AuthController))
+#5 /Users/work/domains/maps/app/controllers/AuthController.php(26): yii\base\Controller->render('sign-up')
+#6 [internal function]: app\controllers\AuthController->actionSignUp()
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('sign-up', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/sign-up', Array)
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#13 {main}
+2015-12-13 19:49:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52055'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025352.34
+    'REQUEST_TIME' => 1450025352
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 19:49:35 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\SingUpForm' not found' in /Users/work/domains/maps/app/controllers/AuthController.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-13 19:49:35 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52062'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025375.17
+    'REQUEST_TIME' => 1450025375
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 19:50:32 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\SingUpForm' not found' in /Users/work/domains/maps/app/controllers/AuthController.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-13 19:50:32 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52069'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025432.92
+    'REQUEST_TIME' => 1450025432
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 19:52:20 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\SignUpForm' not found' in /Users/work/domains/maps/app/controllers/AuthController.php:27
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-12-13 19:52:20 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52075'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025540.25
+    'REQUEST_TIME' => 1450025540
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 19:52:34 [::1][-][-][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\SignUpForm::passwordHash' 
+
+in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Component.php:143
+
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(2029): yii\base\Component->__get('passwordHash')
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(1208): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\SignUpForm), 'passwordHash')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(1257): yii\helpers\BaseHtml::activeInput('text', Object(app\models\SignUpForm), 'passwordHash', Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(app\models\SignUpForm), 'passwordHash', Array)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(184): yii\widgets\ActiveField->textInput()
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(156): yii\widgets\ActiveField->render()
+#6 /Users/work/domains/maps/app/views/auth/sign-up.php(15): yii\widgets\ActiveField->__toString()
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\AuthController))
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('sign-up', Array, Object(app\controllers\AuthController))
+#11 /Users/work/domains/maps/app/controllers/AuthController.php(30): yii\base\Controller->render('sign-up', Array)
+#12 [internal function]: app\controllers\AuthController->actionSignUp()
+#13 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('sign-up', Array)
+#16 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/sign-up', Array)
+#17 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#19 {main}' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 /Users/work/domains/maps/app/views/auth/sign-up.php(15): yii\widgets\ActiveField->__toString()
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\AuthController))
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(app\controllers\AuthController))
+#8 /Users/work/domains/maps/app/controllers/AuthController.php(30): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: app\controllers\AuthController->actionSignUp()
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#12 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#13 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#16 {main}
+    in /Users/work/domains/maps/app/views/auth/sign-up.php:15
+    in /Users/work/domains/maps/app/controllers/AuthController.php:30
+2015-12-13 19:52:34 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52081'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450025554.7
+    'REQUEST_TIME' => 1450025554
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 21:02:40 [::1][-][024f71520fe003dfcf11ddee1269212e][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\LoginForm::username' 
+
+in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Component.php:143
+
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(2029): yii\base\Component->__get('username')
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(1208): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\LoginForm), 'username')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(1257): yii\helpers\BaseHtml::activeInput('text', Object(app\models\LoginForm), 'username', Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(app\models\LoginForm), 'username', Array)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(184): yii\widgets\ActiveField->textInput()
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2-bootstrap/ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(156): yii\bootstrap\ActiveField->render()
+#7 /Users/work/domains/maps/app/views/auth/login.php(25): yii\widgets\ActiveField->__toString()
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\AuthController))
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('login', Array, Object(app\controllers\AuthController))
+#12 /Users/work/domains/maps/app/controllers/AuthController.php(23): yii\base\Controller->render('login', Array)
+#13 [internal function]: app\controllers\AuthController->actionLogin()
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#17 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/login', Array)
+#18 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#20 {main}' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 /Users/work/domains/maps/app/views/auth/login.php(25): yii\widgets\ActiveField->__toString()
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\AuthController))
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(app\controllers\AuthController))
+#8 /Users/work/domains/maps/app/controllers/AuthController.php(23): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: app\controllers\AuthController->actionLogin()
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#12 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#13 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#16 {main}
+    in /Users/work/domains/maps/app/views/auth/login.php:25
+    in /Users/work/domains/maps/app/controllers/AuthController.php:23
+2015-12-13 21:02:40 [::1][-][024f71520fe003dfcf11ddee1269212e][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52735'
+    'REDIRECT_URL' => '/auth/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450029760.8
+    'REQUEST_TIME' => 1450029760
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 21:03:51 [::1][-][024f71520fe003dfcf11ddee1269212e][error][yii\base\ErrorException:256] exception 'yii\base\ErrorException' with message 'Exception (Unknown Property) 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\LoginForm::username' 
+
+in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Component.php:143
+
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(2029): yii\base\Component->__get('username')
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(1208): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\LoginForm), 'username')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/helpers/BaseHtml.php(1257): yii\helpers\BaseHtml::activeInput('text', Object(app\models\LoginForm), 'username', Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(358): yii\helpers\BaseHtml::activeTextInput(Object(app\models\LoginForm), 'username', Array)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(184): yii\widgets\ActiveField->textInput()
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2-bootstrap/ActiveField.php(187): yii\widgets\ActiveField->render(NULL)
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(156): yii\bootstrap\ActiveField->render()
+#7 /Users/work/domains/maps/app/views/auth/login.php(25): yii\widgets\ActiveField->__toString()
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\AuthController))
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('login', Array, Object(app\controllers\AuthController))
+#12 /Users/work/domains/maps/app/controllers/AuthController.php(23): yii\base\Controller->render('login', Array)
+#13 [internal function]: app\controllers\AuthController->actionLogin()
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#17 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/login', Array)
+#18 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#20 {main}' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/ErrorHandler.php:299
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError('<span class="nu...', '<span class="st...', '<span class="st...', '<span class="nu...', '...')
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/ErrorHandler.php(299): trigger_error('<span class="st...', '<span class="nu...')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/ActiveField.php(158): yii\base\ErrorHandler::convertExceptionToError(Object(yii\base\UnknownPropertyException))
+#3 /Users/work/domains/maps/app/views/auth/login.php(25): yii\widgets\ActiveField->__toString()
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\AuthController))
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(app\controllers\AuthController))
+#8 /Users/work/domains/maps/app/controllers/AuthController.php(23): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#9 [internal function]: app\controllers\AuthController->actionLogin()
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#12 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#13 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#16 {main}
+    in /Users/work/domains/maps/app/views/auth/login.php:25
+    in /Users/work/domains/maps/app/controllers/AuthController.php:23
+2015-12-13 21:03:51 [::1][-][024f71520fe003dfcf11ddee1269212e][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '52739'
+    'REDIRECT_URL' => '/auth/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450029831.58
+    'REQUEST_TIME' => 1450029831
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:08:49 [::1][-][024f71520fe003dfcf11ddee1269212e][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\Nav::activateParent' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Component->__set('activateParent', true)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#7 /Users/work/domains/maps/app/views/layouts/main.php(68): yii\base\Widget::widget(Array)
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\SiteController))
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Users/work/domains/maps/app/controllers/SiteController.php(52): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#20 {main}
+2015-12-13 22:08:49 [::1][-][024f71520fe003dfcf11ddee1269212e][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033729.44
+    'REQUEST_TIME' => 1450033729
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:01 [::1][-][024f71520fe003dfcf11ddee1269212e][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\Nav::encodeLabel' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Component->__set('encodeLabel', false)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#7 /Users/work/domains/maps/app/views/layouts/main.php(68): yii\base\Widget::widget(Array)
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(386): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\controllers\SiteController))
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(372): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Users/work/domains/maps/app/controllers/SiteController.php(52): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#20 {main}
+2015-12-13 22:09:01 [::1][-][024f71520fe003dfcf11ddee1269212e][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53153'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033741.23
+    'REQUEST_TIME' => 1450033741
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.01
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.08
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.14
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.21
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.27
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.35
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.41
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.48
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.54
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.61
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.67
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.73
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.86
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:11 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.92
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033751.99
+    'REQUEST_TIME' => 1450033751
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.05
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.12
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.18
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.24
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.3
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.37
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.55
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.61
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.67
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.73
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.8
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.87
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:12 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033752.93
+    'REQUEST_TIME' => 1450033752
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.07
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.13
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.19
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.26
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.32
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.38
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.45
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.51
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.58
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.64
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.7
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.77
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:13 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53154'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033753.84
+    'REQUEST_TIME' => 1450033753
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:09:32 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:38
+2015-12-13 22:09:32 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53163'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450033772.46
+    'REQUEST_TIME' => 1450033772
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:15:17 [::1][-][024f71520fe003dfcf11ddee1269212e][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\LoginForm::username' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/work/domains/maps/app/models/LoginForm.php(84): yii\base\Component->__get('username')
+#1 /Users/work/domains/maps/app/models/LoginForm.php(56): app\models\LoginForm->getUser()
+#2 [internal function]: app\models\LoginForm->validatePassword('password', NULL)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/validators/InlineValidator.php(69): call_user_func(Array, 'password', NULL)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/validators/Validator.php(240): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Model.php(352): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#6 /Users/work/domains/maps/app/models/LoginForm.php(70): yii\base\Model->validate()
+#7 /Users/work/domains/maps/app/controllers/AuthController.php(19): app\models\LoginForm->login()
+#8 [internal function]: app\controllers\AuthController->actionLogin()
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('login', Array)
+#12 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('auth/login', Array)
+#13 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#15 {main}
+2015-12-13 22:15:17 [::1][-][024f71520fe003dfcf11ddee1269212e][info][application] $_POST = [
+    '_csrf' => 'Qy5KaXYtLU4mGAMjRmQaDBBGfQ0Zbxx8EH48WDJHRiAqWX0/Gl1OBQ=='
+    'LoginForm' => [
+        'email' => '2131@123.ru'
+        'password' => '123123123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://maps'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53219'
+    'REDIRECT_URL' => '/auth/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450034117.09
+    'REQUEST_TIME' => 1450034117
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:16:03 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:39
+2015-12-13 22:16:03 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53232'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450034163.78
+    'REQUEST_TIME' => 1450034163
+    'argv' => []
+    'argc' => 0
+]
+2015-12-13 22:23:58 [::1][-][-][error][application] Ошибка при регистрации
+    in /Users/work/domains/maps/app/controllers/AuthController.php:39
+2015-12-13 22:23:58 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '024f71520fe003dfcf11ddee1269212e'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'Возникла ошибка при регистрации'
+    '__id' => null
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/auth/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=024f71520fe003dfcf11ddee1269212e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '53276'
+    'REDIRECT_URL' => '/auth/sign-up'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/sign-up'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450034638.68
+    'REQUEST_TIME' => 1450034638
+    'argv' => []
+    'argc' => 0
+]

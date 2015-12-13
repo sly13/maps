@@ -12,6 +12,8 @@ class m151212_120814_create_user_table extends Migration
             'group' => 'VARCHAR(10) NOT NULL',
             'email' => 'VARCHAR(100) NOT NULL',
             'passwordHash' => 'VARCHAR(100) NOT NULL',
+            'authKey' => 'VARCHAR(32) NOT NULL',
+            'status' => 'SMALLINT(6) NOT NULL',
             'timeCreated' => 'TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP',
             'timeVisited' => 'TIMESTAMP NULL DEFAULT NULL',
             'PRIMARY KEY (id)',

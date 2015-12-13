@@ -25,6 +25,15 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
+
+    <?php
+        $menuItems = [
+            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'About', 'url' => ['/site/about']],
+            ['label' => 'Contact', 'url' => ['/site/contact']],
+        ];
+    ?>
+
     <?php
     NavBar::begin([
         'brandLabel' => 'My Company',
@@ -33,20 +42,29 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
+
+    if (Yii::$app->user->isGuest) :
+        $menuItems[] = [
+            'label' => 'Регистрация',
+            'url' => ['/auth/sign-up']
+        ];
+    $menuItems[] = [
+        'label' => 'Вход',
+        'url' => ['/auth/login']
+    ];
+    else :
+    $menuItems[] = [
+        'label' => 'Выйти (' . Yii::$app->user->identity->email . ')',
+        'url' => ['/auth/logout'],
+        'linkOptions' => ['data-method' => 'post']
+    ];
+    endif;
+
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ?
-                ['label' => 'Login', 'url' => ['/site/login']] :
-                [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ],
-        ],
+        'items' => $menuItems,
+        //'activateParent' => true,
+        //'encodeLabel' => false
     ]);
     NavBar::end();
     ?>
