@@ -183,6 +183,9 @@ ThemeAsset::register($this);
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <?= Html::a('<i class="fa fa-sign-out"></i>', Yii::$app->homeUrl) ?>
+                        </li>
                     </ul>
                 </div>
                 <!-- End Top -->

@@ -47405,3 +47405,54 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-13 15:30:37 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Users/work/domains/maps".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('Users/work/doma...', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-13 15:30:37 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '49820'
+    'REDIRECT_URL' => '/Users/work/domains/maps'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/Users/work/domains/maps'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450009837.36
+    'REQUEST_TIME' => 1450009837
+    'argv' => []
+    'argc' => 0
+]
