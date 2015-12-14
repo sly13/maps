@@ -212,13 +212,13 @@ ThemeAsset::register($this);
 
                     <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Dashboard</span></a></li>
 
-                    <li class="active treeview">
+                    <li class="<!--active--> treeview">
                         <a href="#">
                             <i class="fa fa-dashboard"></i> <span>Пользователи</span> <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="index.html"><i class="fa fa-circle-o"></i> Тест 1</a></li>
-                            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Тест 2</a></li>
+                            <li><?= Html::a('<i class="fa fa-circle-o text-red"></i> Список', ['users/index'], ['class' => '']) ?></li>
+                            <li class="<!--active-->"><?= Html::a('<i class="fa fa-circle-o text-red"></i> Тест 2', ['users/index'], ['class' => '']) ?></li>
                         </ul>
                     </li>
 

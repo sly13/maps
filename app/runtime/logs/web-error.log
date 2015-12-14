@@ -53561,3 +53561,301 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-14 09:26:35 [::1][2][7eb8e4523cae01378f4d66363d80c8ae][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/user/index".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/user/inde...', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-14 09:26:35 [::1][2][7eb8e4523cae01378f4d66363d80c8ae][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '7eb8e4523cae01378f4d66363d80c8ae'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=7eb8e4523cae01378f4d66363d80c8ae; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '55322'
+    'REDIRECT_URL' => '/admin/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450074395.65
+    'REQUEST_TIME' => 1450074395
+    'argv' => []
+    'argc' => 0
+]
+2015-12-14 09:30:58 [::1][2][7eb8e4523cae01378f4d66363d80c8ae][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/user/index".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/user/inde...', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-14 09:30:57 [::1][2][7eb8e4523cae01378f4d66363d80c8ae][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '7eb8e4523cae01378f4d66363d80c8ae'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=7eb8e4523cae01378f4d66363d80c8ae; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '55405'
+    'REDIRECT_URL' => '/admin/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450074657.97
+    'REQUEST_TIME' => 1450074657
+    'argv' => []
+    'argc' => 0
+]
+2015-12-14 09:32:11 [::1][2][7eb8e4523cae01378f4d66363d80c8ae][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/user/index".' in /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/user/inde...', Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-14 09:32:11 [::1][2][7eb8e4523cae01378f4d66363d80c8ae][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '7eb8e4523cae01378f4d66363d80c8ae'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=7eb8e4523cae01378f4d66363d80c8ae; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '55410'
+    'REDIRECT_URL' => '/admin/user'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450074731.5
+    'REQUEST_TIME' => 1450074731
+    'argv' => []
+    'argc' => 0
+]
+2015-12-14 09:34:33 [::1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "dataProvider" property must be set.' in /Users/work/domains/maps/vendor/yiisoft/yii2/widgets/BaseListView.php:109
+Stack trace:
+#0 /Users/work/domains/maps/vendor/yiisoft/yii2/grid/GridView.php(262): yii\widgets\BaseListView->init()
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Object.php(107): yii\grid\GridView->init()
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/di/Container.php(366): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#5 /Users/work/domains/maps/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#6 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Widget.php(56): yii\BaseYii::createObject(Array)
+#7 /Users/work/domains/maps/app/modules/admin/views/users/index.php(9): yii\base\Widget::begin()
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\modules\admin\controllers\UsersController))
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(app\modules\admin\controllers\UsersController))
+#12 /Users/work/domains/maps/app/modules/admin/controllers/UsersController.php(8): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\admin\controllers\UsersController->actionIndex()
+#14 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#17 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/users/ind...', Array)
+#18 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#20 {main}
+2015-12-14 09:34:33 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '7eb8e4523cae01378f4d66363d80c8ae'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=7eb8e4523cae01378f4d66363d80c8ae; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '55427'
+    'REDIRECT_URL' => '/admin/users'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/users'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450074873.04
+    'REQUEST_TIME' => 1450074873
+    'argv' => []
+    'argc' => 0
+]
+2015-12-14 09:40:31 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: dataProvider' in /Users/work/domains/maps/app/modules/admin/views/users/index.php:12
+Stack trace:
+#0 /Users/work/domains/maps/app/modules/admin/views/users/index.php(12): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/work/dom...', 12, Array)
+#1 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(325): require('/Users/work/dom...')
+#2 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/work/dom...', Array)
+#3 /Users/work/domains/maps/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/work/dom...', Array, Object(app\modules\admin\controllers\UsersController))
+#4 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('index', Array, Object(app\modules\admin\controllers\UsersController))
+#5 /Users/work/domains/maps/app/modules/admin/controllers/UsersController.php(15): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\modules\admin\controllers\UsersController->actionIndex()
+#7 /Users/work/domains/maps/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#10 /Users/work/domains/maps/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('admin/users/ind...', Array)
+#11 /Users/work/domains/maps/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/work/domains/maps/web/index.php(16): yii\base\Application->run()
+#13 {main}
+2015-12-14 09:40:31 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK\";}'
+    'PHPSESSID' => '7eb8e4523cae01378f4d66363d80c8ae'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=1f2b73a11b307080af4abcc7a013802a2a9190ba9cd6d74c3581b877576d489ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22e6IJ0I7BSh7doB12SPv1Djkniw7VlpcK%22%3B%7D; PHPSESSID=7eb8e4523cae01378f4d66363d80c8ae; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/maps/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/maps/web/index.php'
+    'REMOTE_PORT' => '55433'
+    'REDIRECT_URL' => '/admin/users'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/users'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450075231.42
+    'REQUEST_TIME' => 1450075231
+    'argv' => []
+    'argc' => 0
+]
