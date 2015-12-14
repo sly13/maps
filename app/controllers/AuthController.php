@@ -48,9 +48,6 @@ class AuthController extends BaseController
             return $this->goHome();
         }
 
-        Yii::$app->session->setFlash('error', 'Возникла ошибка при регистрации');
-        Yii::error('Ошибка при регистрации');
-
         return $this->render('sign-up', compact('model'));
     }
 

@@ -8,6 +8,8 @@ use yii\helpers\Html;
 
 $this->title = 'Админка';
 
+$user = Yii::$app->user->identity;
+
 ThemeAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -150,13 +152,13 @@ ThemeAsset::register($this);
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <?= Html::img('@web/images/user.jpg', ['class' => 'user-image', 'alt' => 'User Image']) ?>
-                                <span class="hidden-xs">Vadim Semenko</span>
+                                <span class="hidden-xs"><?= $user->name ?></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="user-header">
                                     <?= Html::img('@web/images/user.jpg', ['class' => 'img-circle', 'alt' => 'User Image']) ?>
                                     <p>
-                                        Vadim Semenko - Web Developer
+                                        <?= $user->name ?> - Web Developer
                                         <small>Member since Dec. 2015</small>
                                     </p>
                                 </li>
@@ -200,7 +202,7 @@ ThemeAsset::register($this);
                         <?= Html::img('@web/images/user.jpg', ['class' => 'img-circle', 'alt' => 'User Image']) ?>
                     </div>
                     <div class="pull-left info">
-                        <p>Vadim Semenko</p>
+                        <p><?= $user->name ?></p>
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
                 </div>

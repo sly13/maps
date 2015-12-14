@@ -36,7 +36,7 @@ class LoginForm extends Model
             ['password', 'string'],
             ['password', 'trim'],
             ['password', 'required', 'message' => 'Необходимо указать пароль'],
-            ['password', 'validatePassword', 'params' => ['message' => 'Необходимо указать пароль.']],
+            ['password', 'validatePassword', 'params' => ['message' => 'Неверный логин или пароль.']],
         ];
     }
 
@@ -84,7 +84,7 @@ class LoginForm extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = User::findOne($this->email);
+            $this->_user = User::findOne(['email' => $this->email]);
         }
 
         return $this->_user;

@@ -5,6 +5,18 @@ namespace app\repositories;
 use app\models\User;
 use Yii;
 
+/**
+ * This is the model class for table "user".
+ *
+ * @property integer $id
+ * @property string $group
+ * @property string $name
+ * @property string $email
+ * @property string $passwordHash
+ * @property string $authKey
+ * @property string $timeCreated
+ * @property string $timeVisited
+ */
 class UserRepository extends ActiveRepository
 {
     /**
