@@ -28,15 +28,14 @@ AppAsset::register($this);
 
     <?php
         $menuItems = [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
+            ['label' => 'Главная', 'url' => ['/site/index']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
         ];
     ?>
 
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'BlablaFlat',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -53,18 +52,24 @@ AppAsset::register($this);
         'url' => ['/auth/login']
     ];
     else :
-    $menuItems[] = [
-        'label' => 'Выйти (' . Yii::$app->user->identity->email . ')',
-        'url' => ['/auth/logout'],
-        'linkOptions' => ['data-method' => 'post']
-    ];
+        $menuItems[] = [
+            'label' => 'Карта',
+            'url' => ['/map/index']
+        ];
+        $menuItems[] = [
+            'label' => 'Админка',
+            'url' => ['/admin']
+        ];
+        $menuItems[] = [
+            'label' => 'Выйти (' . Yii::$app->user->identity->name . ')',
+            'url' => ['/auth/logout'],
+            'linkOptions' => ['data-method' => 'post']
+        ];
     endif;
 
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-        //'activateParent' => true,
-        //'encodeLabel' => false
+        'items' => $menuItems
     ]);
     NavBar::end();
     ?>

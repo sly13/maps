@@ -8,11 +8,16 @@ class SignUpForm extends Model
     /**
      * @var string
      */
+    public $name;
+    /**
+     * @var string
+     */
     public $email;
     /**
      * @var string
      */
     public $password;
+
 
     /**
      * @inheritdoc
@@ -20,6 +25,10 @@ class SignUpForm extends Model
     public function rules()
     {
         return [
+            ['name', 'string', 'max' => 100],
+            ['name', 'trim'],
+            ['name', 'required', 'message' => 'Укажите Ваше имя'],
+
             ['email', 'string', 'max' => 200],
             ['email', 'trim'],
             ['email', 'required', 'message' => 'Необходимо указать адрес электронной почты.'],
@@ -37,22 +46,9 @@ class SignUpForm extends Model
     public function attributeLabels()
     {
         return [
+            'name' => 'Ваше имя',
             'email' => 'Email',
             'password' => 'Пароль',
         ];
-    }
-
-    public function signUp()
-    {
-        $user = new User();
-        $user->email = $this->email;
-        $user->group = User::GROUP_USER;
-        $user->status = User::STATUS_ACTIVE;
-        $user->setPassword($this->password);
-        $user->generateAuthKey();
-        $user->save();
-
-        return $user->save() ? $user : null;
-
     }
 }

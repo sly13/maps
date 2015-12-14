@@ -6,49 +6,25 @@ use app\models\query\UserQuery;
 use Yii;
 use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
+use yii\web\IdentityInterface;
 
 /**
  * This is the model class for table "user".
  *
  * @property integer $id
  * @property string $group
+ * @property string $name
  * @property string $email
  * @property string $passwordHash
  * @property string $authKey
- * @property integer $status
  * @property string $timeCreated
  * @property string $timeVisited
  */
-class User extends ActiveRecord implements \yii\web\IdentityInterface
+class User extends ActiveRecord implements IdentityInterface
 {
-    const STATUS_DELETED = 0;
-    const STATUS_ACTIVE = 10;
-
     const GROUP_USER = 'user';
     const GROUP_ADMIN = 'admin';
 
-    public $id;
-    public $username;
-    public $password;
-    public $authKey;
-    public $accessToken;
-
-    private static $users = [
-        '100' => [
-            'id' => '100',
-            'username' => 'admin',
-            'password' => 'admin',
-            'authKey' => 'test100key',
-            'accessToken' => '100-token',
-        ],
-        '101' => [
-            'id' => '101',
-            'username' => 'demo',
-            'password' => 'demo',
-            'authKey' => 'test101key',
-            'accessToken' => '101-token',
-        ],
-    ];
 
     /**
      * @return string
@@ -67,7 +43,7 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
             'timestamp' => [
                 'class' => TimestampBehavior::className(),
                 'attributes' => [
-                    static::EVENT_BEFORE_INSERT => ['timeCreated'],
+                    static::EVENT_BEFORE_INSERT => ['timeCreated', 'timeVisited'],
                 ],
                 'value' => function () {
                     return date('Y-m-d H:i:s');
@@ -82,8 +58,7 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
     public function rules()
     {
         return [
-            [['group', 'email', 'passwordHash', 'authKey', 'status'], 'required'],
-            [['status'], 'integer'],
+            [['group', 'email', 'passwordHash', 'authKey', 'name'], 'required'],
             [['timeCreated', 'timeVisited'], 'safe'],
             [['group'], 'string', 'max' => 10],
             [['email', 'passwordHash'], 'string', 'max' => 100],
@@ -100,6 +75,7 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
         return [
             'id' => 'ID',
             'group' => 'Group',
+            'name' => 'Name',
             'email' => 'Email',
             'passwordHash' => 'Password Hash',
             'authKey' => 'Auth Key',
@@ -116,15 +92,7 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
      */
     public function setPassword($password)
     {
-        $this->passwordHash = Yii::$app->security->generatePasswordHash($password);
-    }
-
-    /**
-     * Generates auth key
-     */
-    public function generateAuthKey()
-    {
-        $this->authKey = Yii::$app->security->generateRandomString();
+        return $this->passwordHash = Yii::$app->security->generatePasswordHash($password);
     }
 
     /**
@@ -160,29 +128,6 @@ class User extends ActiveRecord implements \yii\web\IdentityInterface
      */
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        foreach (self::$users as $user) {
-            if ($user['accessToken'] === $token) {
-                return new static($user);
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * Finds user by username
-     *
-     * @param  string      $username
-     * @return static|null
-     */
-    public static function findByUsername($username)
-    {
-        foreach (self::$users as $user) {
-            if (strcasecmp($user['username'], $username) === 0) {
-                return new static($user);
-            }
-        }
-
         return null;
     }
 

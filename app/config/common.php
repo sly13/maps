@@ -24,8 +24,10 @@ return [
 
     'components' => [
         'user' => [
+            //'class' => 'app\models\User',
             'identityClass' => 'app\models\User',
-            'enableAutoLogin' => true
+            'enableAutoLogin' => true,
+            'loginUrl' => 'auth/login',
         ],
         'db' => [
             'class' => 'yii\db\Connection',

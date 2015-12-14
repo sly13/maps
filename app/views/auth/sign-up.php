@@ -7,8 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\User */
 /* @var $form ActiveForm */
 
-$this->title = 'Регистрация';
-$this->params['breadcrumbs'][] = $this->title;
+$this->title = 'Регистрация через E-mail';
 ?>
 
 <h1><?= Html::encode($this->title) ?></h1>
@@ -17,17 +16,19 @@ $this->params['breadcrumbs'][] = $this->title;
     'id' => 'login-form',
     'options' => ['class' => 'form-horizontal'],
     'fieldConfig' => [
-        'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-        'labelOptions' => ['class' => 'col-lg-1 control-label'],
+        'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-7\">{error}</div>",
+        'labelOptions' => ['class' => 'col-lg-2 control-label'],
     ],
 ]); ?>
 
+<?= $form->field($model, 'name') ?>
 <?= $form->field($model, 'email') ?>
 <?= $form->field($model, 'password')->passwordInput() ?>
 
 <div class="form-group">
-    <div class="col-lg-offset-1 col-lg-11">
-        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
+    <div class="col-lg-offset-2 col-lg-11">
+        <?= Html::submitButton('Зарегистрироваться', ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Войти', ['/auth/login']) ?>
     </div>
 </div>
 

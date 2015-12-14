@@ -3,14 +3,27 @@ namespace app\controllers;
 
 use app\models\LoginForm;
 use app\models\SignUpForm;
+use app\repositories\UserRepository;
 use Yii;
 
 class AuthController extends BaseController
 {
+    /**
+     * @var $user UserRepository
+     */
+    public $users;
+
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        $this->users = new UserRepository();
+    }
 
     public function actionLogin()
     {
-        if (!\Yii::$app->user->isGuest) {
+        if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
@@ -25,20 +38,18 @@ class AuthController extends BaseController
 
     public function actionSignUp()
     {
+
         /* @var $model \app\models\SignUpForm */
         $model = new SignUpForm();
 
         if($model->load(Yii::$app->request->post()) && $model->validate()){
-
-            if ($user = $model->signUp()) {
-                if (Yii::$app->getUser()->login($user))
-                    return $this->goHome();
-            }
-        } else {
-            Yii::$app->session->setFlash('error', 'Возникла ошибка при регистрации');
-            Yii::error('Ошибка при регистрации');
-            //return $this->refresh();
+            $user = $this->users->create($model->attributes, $model->password);
+            Yii::$app->getUser()->login($user, Yii::$app->params['user.loginDuration']);
+            return $this->goHome();
         }
+
+        Yii::$app->session->setFlash('error', 'Возникла ошибка при регистрации');
+        Yii::error('Ошибка при регистрации');
 
         return $this->render('sign-up', compact('model'));
     }
