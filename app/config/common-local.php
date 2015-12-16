@@ -5,7 +5,7 @@ return [
         'db' => [
             'dsn' => 'mysql:host=localhost;dbname=blablaflat',
             'username' => 'root',
-            'password' => 'root',
+            'password' => '',
             //'tablePrefix' => 'keys_',
         ],
         'mailer' => [

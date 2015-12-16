@@ -53859,3 +53859,1919 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-17 00:51:40 [127.0.0.1][-][24j5ledcm96qu7gjkt98cne9h7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#8 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one('<span class="ke...')
+#11 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#12 D:\OpenServer\domains\maps\app\models\User.php(126): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#13 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\User.php(614): app\models\User::findIdentity('<span class="st...')
+#14 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#15 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#16 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#17 D:\OpenServer\domains\maps\app\views\layouts\main.php(45): yii\base\Component->__get('<span class="st...')
+#18 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\View.php(325): require('D:\\OpenServer\\d...')
+#19 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#20 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#21 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<span class="st...')
+#22 D:\OpenServer\domains\maps\app\controllers\SiteController.php(52): yii\base\Controller->render('<span class="st...')
+#23 [internal function]: app\controllers\SiteController->actionIndex()
+#24 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#25 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#26 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#27 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#28 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#30 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Command.php(172): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Command.php(806): yii\db\Command->getRawSql()
+#6 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Command.php(373): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\ActiveQuery.php(300): yii\db\Query->one('<span class="ke...')
+#9 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#10 D:\OpenServer\domains\maps\app\models\User.php(126): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\User.php(614): app\models\User::findIdentity('<span class="st...')
+#12 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#13 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#14 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#15 D:\OpenServer\domains\maps\app\views\layouts\main.php(45): yii\base\Component->__get('<span class="st...')
+#16 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\View.php(325): require('D:\\OpenServer\\d...')
+#17 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#18 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#19 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('<span class="st...')
+#20 D:\OpenServer\domains\maps\app\controllers\SiteController.php(52): yii\base\Controller->render('<span class="st...')
+#21 [internal function]: app\controllers\SiteController->actionIndex()
+#22 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#23 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[]')
+#24 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[]')
+#25 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#26 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#28 {main}
+Additional Information:
+
+2015-12-17 00:51:40 [127.0.0.1][-][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43522'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302700.276
+    'REQUEST_TIME' => 1450302700
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:53:48 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/map' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('map', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/map', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:53:48 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/web/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43583'
+    'REDIRECT_URL' => '/web/map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/map'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302828.207
+    'REQUEST_TIME' => 1450302828
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:53:52 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:53:51 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/web/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43583'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302831.739
+    'REQUEST_TIME' => 1450302831
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:55:44 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/map' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('map', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/map', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:55:44 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43725'
+    'REDIRECT_URL' => '/web/map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302944.059
+    'REQUEST_TIME' => 1450302944
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:55:46 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:55:46 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43725'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302946.03
+    'REQUEST_TIME' => 1450302946
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:55:58 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:55:58 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43725'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302958.156
+    'REQUEST_TIME' => 1450302958
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:00 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:00 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43773'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302960.254
+    'REQUEST_TIME' => 1450302960
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:06 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:06 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43773'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302966.506
+    'REQUEST_TIME' => 1450302966
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:13 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:13 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43773'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302973.437
+    'REQUEST_TIME' => 1450302973
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:16 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:15 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43796'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450302975.562
+    'REQUEST_TIME' => 1450302975
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:44 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:43 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43839'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303003.769
+    'REQUEST_TIME' => 1450303003
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:46 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:45 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43839'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303005.783
+    'REQUEST_TIME' => 1450303005
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:48 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:48 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43839'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303008.014
+    'REQUEST_TIME' => 1450303008
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:56:55 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:56:54 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43839'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303014.666
+    'REQUEST_TIME' => 1450303014
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:57:20 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:57:19 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43881'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303039.616
+    'REQUEST_TIME' => 1450303039
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:57:22 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:57:21 [127.0.0.1][1][24j5ledcm96qu7gjkt98cne9h7][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => '24j5ledcm96qu7gjkt98cne9h7'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'goaedi'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=24j5ledcm96qu7gjkt98cne9h7; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43887'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303041.69
+    'REQUEST_TIME' => 1450303041
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 00:58:24 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 00:58:24 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '43964'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303104.053
+    'REQUEST_TIME' => 1450303104
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:01:34 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlRule::' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('', 'site/index')
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlRule', Array, Array)
+#5 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlRule', Array, Array)
+#6 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\UrlManager.php(212): yii\BaseYii::createObject(Array)
+#7 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\UrlManager.php(154): yii\web\UrlManager->buildRules(Array)
+#8 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#11 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 D:\OpenServer\domains\maps\vendor\yiisoft\yii2-debug\Module.php(133): yii\base\Application->getUrlManager()
+#16 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#18 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->__construct(Array)
+#22 {main}
+2015-12-17 01:01:34 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44089'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303294.141
+    'REQUEST_TIME' => 1450303294
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:01:46 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\web\UrlRule::' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php:161
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\BaseYii.php(518): yii\base\Object->__set('', 'site/index')
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\web\UrlRule), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#4 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlRule', Array, Array)
+#5 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlRule', Array, Array)
+#6 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\UrlManager.php(212): yii\BaseYii::createObject(Array)
+#7 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\UrlManager.php(154): yii\web\UrlManager->buildRules(Array)
+#8 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php(107): yii\web\UrlManager->init()
+#9 [internal function]: yii\base\Object->__construct(Array)
+#10 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#11 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#12 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#13 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#14 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(563): yii\di\ServiceLocator->get('urlManager')
+#15 D:\OpenServer\domains\maps\vendor\yiisoft\yii2-debug\Module.php(133): yii\base\Application->getUrlManager()
+#16 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(315): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#17 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(63): yii\base\Application->bootstrap()
+#18 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(267): yii\web\Application->bootstrap()
+#19 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Object.php(107): yii\base\Application->init()
+#20 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#21 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->__construct(Array)
+#22 {main}
+2015-12-17 01:01:46 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44090'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303305.925
+    'REQUEST_TIME' => 1450303305
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:02:18 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:02:18 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44106'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303338.143
+    'REQUEST_TIME' => 1450303338
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:02:52 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:02:52 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44132'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303372.176
+    'REQUEST_TIME' => 1450303372
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:03:02 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/admin' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('admin', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/admin', Array)
+#2 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:03:02 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44137'
+    'REDIRECT_URL' => '/web/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303381.898
+    'REQUEST_TIME' => 1450303381
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:03:32 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "contact".' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('contact', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:03:32 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'hxzazu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44175'
+    'REDIRECT_URL' => '/web/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/contact'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303412.397
+    'REQUEST_TIME' => 1450303412
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:03:41 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "contact".' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('contact', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:03:41 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'hxzazu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/admin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44179'
+    'REDIRECT_URL' => '/web/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/contact'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303421.153
+    'REQUEST_TIME' => 1450303421
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:03:49 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "map/index".' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('map/index', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:03:49 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'hxzazu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44179'
+    'REDIRECT_URL' => '/web/map/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303429.198
+    'REQUEST_TIME' => 1450303429
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:03:57 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "map/index".' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('map/index', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:03:56 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'hxzazu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44175'
+    'REDIRECT_URL' => '/web/map/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303436.596
+    'REQUEST_TIME' => 1450303436
+    'argv' => []
+    'argc' => 0
+]
+2015-12-17 01:04:41 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "map/index".' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('map/index', Array)
+#1 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\maps\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\maps\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\maps\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-17 01:04:41 [127.0.0.1][1][l23ri2fi7u839dhktd6mpg5rn4][info][application] $_COOKIE = [
+    '_csrf' => '4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"rlYR1IqZLw4162YDGjOVmWm0V455sGyy\";}'
+    'PHPSESSID' => 'l23ri2fi7u839dhktd6mpg5rn4'
+    '_identity' => '622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a:2:{i:0;s:9:\"_identity\";i:1;s:48:\"[\"1\",\"ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+    '__captcha/site/captcha' => 'hxzazu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'maps'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36'
+    'HTTP_REFERER' => 'http://maps/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=4bce540832711799f5d1364163310a44df77891ac437c0705243b585b3e4e18ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22rlYR1IqZLw4162YDGjOVmWm0V455sGyy%22%3B%7D; PHPSESSID=l23ri2fi7u839dhktd6mpg5rn4; _identity=622fe216c0c8960f9c3e611a82c3f1b22b2c56292c63407adfa862f2c349d0b8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A48%3A%22%5B%221%22%2C%22ov9o9bay-MYXyE01uH6BOKW3cuI5MI6v%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'maps'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/maps'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/maps/web/index.php'
+    'REMOTE_PORT' => '44280'
+    'REDIRECT_URL' => '/web/map/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1450303481.421
+    'REQUEST_TIME' => 1450303481
+    'argv' => []
+    'argc' => 0
+]

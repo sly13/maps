@@ -23,6 +23,9 @@ return [
     'bootstrap' => ['log'],
 
     'components' => [
+        'request' => [
+            'baseUrl'=> '',
+        ],
         'user' => [
             //'class' => 'app\models\User',
             'identityClass' => 'app\models\User',
@@ -38,12 +41,10 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'admin' => 'admin/default/index',
+                '' => 'site/index',
+                //'<action>'=>'site/<action>',
+                'admin' => 'admin/dashboard/index',
                 'admin/<controller:\w+>' => 'admin/<controller>/index',
-
-                '<_c:[\w\-]+>/<id:\d+>' => '<_c>/view',
-                '<_c:[\w\-]+>' => '<_c>/index',
-                '<_c:[\w\-]+>/<_a:[\w\-]+>/<id:\d+>' => '<_c>/<_a>',
             ],
         ],
         'mailer' => [
