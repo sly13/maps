@@ -41,10 +41,11 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '' => 'site/index',
-                //'<action>'=>'site/<action>',
                 'admin' => 'admin/dashboard/index',
                 'admin/<controller:\w+>' => 'admin/<controller>/index',
+
+                '' => 'site/index',
+                '<controller:\w+>' => '<controller>/index',
             ],
         ],
         'mailer' => [
