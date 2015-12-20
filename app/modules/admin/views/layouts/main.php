@@ -5,6 +5,8 @@
 
 use app\modules\admin\assets\ThemeAsset;
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
+use yii\widgets\Menu;
 
 $this->title = 'Админка';
 
@@ -209,23 +211,8 @@ ThemeAsset::register($this);
 
                 <ul class="sidebar-menu">
                     <li class="header">Панель управления</li>
-
-                    <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Dashboard</span></a></li>
-
-                    <li class="<!--active--> treeview">
-                        <a href="#">
-                            <i class="fa fa-dashboard"></i> <span>Пользователи</span> <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><?= Html::a('<i class="fa fa-circle-o text-red"></i> Список', ['users/index'], ['class' => '']) ?></li>
-                            <li class="<!--active-->"><?= Html::a('<i class="fa fa-circle-o text-red"></i> Тест 2', ['users/index'], ['class' => '']) ?></li>
-                        </ul>
-                    </li>
-
-                    <li class="header">LABELS</li>
-                    <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-                    <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-                    <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+                    <li><?= Html::a('<i class="fa fa-dashboard"></i> <span>Дашборд</span>', ['dashboard/index']) ?></li>
+                    <li><?= Html::a('<i class="fa fa-users"></i> <span>Пользователи</span>', ['users/index']) ?></li>
                 </ul>
             </section>
         </aside>
@@ -233,11 +220,17 @@ ThemeAsset::register($this);
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <section class="content-header">
-                <h1>Dashboard<small>Version 1.0</small></h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active">Dashboard</li>
-                </ol>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?= Breadcrumbs::widget([
+                            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                            'homeLink' => ['label' => '<i class="fa fa-home"></i>', 'url' => ['default/index']],
+                            'tag' => 'ul',
+                            'options' => ['class' => 'breadcrumb', 'style' => 'margin-bottom: 0'],
+                            'encodeLabels' => false,
+                        ]) ?>
+                    </div>
+                </div>
             </section>
 
             <section class="content">
