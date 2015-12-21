@@ -10,7 +10,7 @@ class ThemeAsset extends AssetBundle
 
     public $css = [
         'css/AdminLTE.min.css',
-        'css/skin-black.min.css',
+        'css/_all-skins.min.css',
     ];
     public $js = [
         'js/bootstrap.min.js',

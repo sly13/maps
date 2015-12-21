@@ -53,12 +53,16 @@ AppAsset::register($this);
     ];
     else :
         $menuItems[] = [
-            'label' => 'Карта',
-            'url' => ['/map/index']
-        ];
-        $menuItems[] = [
             'label' => 'Админка',
             'url' => ['/admin']
+        ];
+        $menuItems[] = [
+            'label' => 'Карта',
+            'url' => ['/map']
+        ];
+        $menuItems[] = [
+            'label' => 'Профиль',
+            'url' => ['/profile']
         ];
         $menuItems[] = [
             'label' => 'Выйти (' . Yii::$app->user->identity->name . ')',

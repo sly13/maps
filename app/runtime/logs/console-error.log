@@ -1,0 +1,528 @@
+2015-12-21 19:50:22 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#19 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-21 19:50:22 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/s6/scpmdjjs223d5q__747h26zc0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.Eq1i0bR3Zd/Render'
+    'OLDPWD' => '/Users/work/domains'
+    'USER' => 'work'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.MgXTGNCHtE/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/work/domains/blablaflat.dev'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/work'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'work'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '18726'
+    '_' => '/Applications/MAMP/bin/php/php5.6.10/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450723822.74
+    'REQUEST_TIME' => 1450723822
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-12-21 20:10:11 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#19 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-21 20:10:11 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/s6/scpmdjjs223d5q__747h26zc0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.Eq1i0bR3Zd/Render'
+    'OLDPWD' => '/Users/work/domains'
+    'USER' => 'work'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.MgXTGNCHtE/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/work/domains/blablaflat.dev'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/work'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'work'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '18726'
+    '_' => '/Applications/MAMP/bin/php/php5.6.10/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450725011.94
+    'REQUEST_TIME' => 1450725011
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-12-21 20:10:16 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#19 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-21 20:10:16 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/s6/scpmdjjs223d5q__747h26zc0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.Eq1i0bR3Zd/Render'
+    'OLDPWD' => '/Users/work/domains'
+    'USER' => 'work'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.MgXTGNCHtE/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/work/domains/blablaflat.dev'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/work'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'work'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '18726'
+    '_' => '/Applications/MAMP/bin/php/php5.6.10/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450725016.15
+    'REQUEST_TIME' => 1450725016
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-12-21 20:10:22 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#19 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-21 20:10:22 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/s6/scpmdjjs223d5q__747h26zc0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.Eq1i0bR3Zd/Render'
+    'OLDPWD' => '/Users/work/domains'
+    'USER' => 'work'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.MgXTGNCHtE/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/work/domains/blablaflat.dev'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/work'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'work'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '18726'
+    '_' => '/Applications/MAMP/bin/php/php5.6.10/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450725022.17
+    'REQUEST_TIME' => 1450725022
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-12-21 20:10:57 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#19 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-21 20:10:57 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/s6/scpmdjjs223d5q__747h26zc0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.Eq1i0bR3Zd/Render'
+    'OLDPWD' => '/Users/work/domains'
+    'USER' => 'work'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.MgXTGNCHtE/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/work/domains/blablaflat.dev'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/work'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'work'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '18726'
+    '_' => '/Applications/MAMP/bin/php/php5.6.10/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450725057.68
+    'REQUEST_TIME' => 1450725057
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2015-12-21 20:17:21 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:579
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#19 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#20 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php:534
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(836): yii\db\Connection->open()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(216): yii\db\Connection->getSlavePdo()
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(831): yii\db\Command->prepare(true)
+#4 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Command.php(359): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#6 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/db/Schema.php(146): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/MigrateController.php(121): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(610): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(102): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#13 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Controller.php(91): yii\base\Controller->runAction('', Array)
+#15 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\console\Controller->runAction('', Array)
+#16 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(167): yii\base\Module->runAction('migrate', Array)
+#17 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/console/Application.php(143): yii\console\Application->runAction('migrate', Array)
+#18 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/work/domains/blablaflat.dev/yii(24): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2015-12-21 20:17:21 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/s6/scpmdjjs223d5q__747h26zc0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.Eq1i0bR3Zd/Render'
+    'OLDPWD' => '/Users/work/domains'
+    'USER' => 'work'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.MgXTGNCHtE/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/work/domains/blablaflat.dev'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/work'
+    'COLORFGBG' => '7;0'
+    'ITERM_SESSION_ID' => 'w0t0p0'
+    'LOGNAME' => 'work'
+    'LC_CTYPE' => 'UTF-8'
+    'SECURITYSESSIONID' => '18726'
+    '_' => '/Applications/MAMP/bin/php/php5.6.10/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1450725441.16
+    'REQUEST_TIME' => 1450725441
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

@@ -23,9 +23,6 @@ return [
     'bootstrap' => ['log'],
 
     'components' => [
-        'request' => [
-            'baseUrl'=> '',
-        ],
         'user' => [
             //'class' => 'app\models\User',
             'identityClass' => 'app\models\User',
