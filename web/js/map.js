@@ -11,12 +11,14 @@ function init() {
 
     // Сравним положение, вычисленное по ip пользователя и
     // положение, вычисленное средствами браузера.
-    geolocation.get({
+/*    geolocation.get({
         provider: 'yandex',
         mapStateAutoApply: true
     }).then(function (result) {
         latitude = result.geoObjects.position[0];
         longitude = result.geoObjects.position[1];
+
+        console.log(result.geoObjects);
 
         // Красным цветом пометим положение, вычисленное через ip.
         result.geoObjects.options.set('preset', 'islands#redCircleIcon');
@@ -24,12 +26,14 @@ function init() {
             balloonContentBody: 'Мое местоположение'
         });
         myMap.geoObjects.add(result.geoObjects);
-    });
+    });*/
 
     geolocation.get({
         provider: 'browser',
         mapStateAutoApply: true
     }).then(function (result) {
+        latitude = result.geoObjects.position[0];
+        longitude = result.geoObjects.position[1];
         // Синим цветом пометим положение, полученное через браузер.
         // Если браузер не поддерживает эту функциональность, метка не будет добавлена на карту.
         result.geoObjects.options.set('preset', 'islands#blueCircleIcon');

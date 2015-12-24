@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 
 
-$this->registerJsFile('@web/js/yandex-map.js');
+$this->registerJsFile('https://api-maps.yandex.ru/2.1/?lang=ru_RU');
 $this->registerJsFile('@web/js/map.js', ['depends' => '\yii\web\JqueryAsset']);
 ?>
 

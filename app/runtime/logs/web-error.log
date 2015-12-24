@@ -3247,3 +3247,754 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-24 19:30:46 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: map/getDots' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('getDots', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/getDots', Array)
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 19:30:46 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '60997'
+    'REDIRECT_URL' => '/map/getDots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/getDots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974646.37
+    'REQUEST_TIME' => 1450974646
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:31:13 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Не удалось проверить переданные данные.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('get-dots', Array)
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/get-dots', Array)
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#5 {main}
+2015-12-24 19:31:13 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61006'
+    'REDIRECT_URL' => '/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974673.63
+    'REQUEST_TIME' => 1450974673
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:32:10 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Не удалось проверить переданные данные.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('get-dots', Array)
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/get-dots', Array)
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#5 {main}
+2015-12-24 19:32:10 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61037'
+    'REDIRECT_URL' => '/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974730.12
+    'REQUEST_TIME' => 1450974730
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:32:20 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Не удалось проверить переданные данные.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('get-dots', Array)
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/get-dots', Array)
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#5 {main}
+2015-12-24 19:32:20 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61044'
+    'REDIRECT_URL' => '/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974740.77
+    'REQUEST_TIME' => 1450974740
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:32:30 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Не удалось проверить переданные данные.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/index', Array)
+#3 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#5 {main}
+2015-12-24 19:32:30 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61051'
+    'REDIRECT_URL' => '/map/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974750.64
+    'REQUEST_TIME' => 1450974750
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:32:53 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/map/index".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/map/index', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 19:32:53 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61057'
+    'REDIRECT_URL' => '/site/map/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/map/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974773.62
+    'REQUEST_TIME' => 1450974773
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:32:58 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/map/index".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/map/index', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 19:32:58 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://blablaflat.dev'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61057'
+    'REDIRECT_URL' => '/site/map/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/map/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974778.03
+    'REQUEST_TIME' => 1450974778
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:33:05 [::1][2][f4f145d66270ba2fd5fcc2c229748237][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/map' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('map', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/map', Array)
+#2 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 19:33:05 [::1][2][f4f145d66270ba2fd5fcc2c229748237][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__captcha/site/captcha' => 'fpazcee'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61066'
+    'REDIRECT_URL' => '/site/map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974785.62
+    'REQUEST_TIME' => 1450974785
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:34:01 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "map/map/get-dots".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/map/get-dot...', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 19:34:01 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61138'
+    'REDIRECT_URL' => '/map/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450974841.84
+    'REQUEST_TIME' => 1450974841
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 19:40:14 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Response content must not be an array.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Response.php:952
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Response.php(310): yii\web\Response->prepare()
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(381): yii\web\Response->send()
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+2015-12-24 19:40:14 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '61283'
+    'REDIRECT_URL' => '/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450975214.25
+    'REQUEST_TIME' => 1450975214
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 20:38:16 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "get-dots".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('get-dots', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 20:38:16 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '63439'
+    'REDIRECT_URL' => '/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450978696.04
+    'REQUEST_TIME' => 1450978696
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 20:38:22 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "get-dots".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('get-dots', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 20:38:22 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '63445'
+    'REDIRECT_URL' => '/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450978702.51
+    'REQUEST_TIME' => 1450978702
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 20:38:48 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "map/map/get-dots".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/map/get-dot...', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 20:38:48 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '63459'
+    'REDIRECT_URL' => '/map/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450978728.24
+    'REQUEST_TIME' => 1450978728
+    'argv' => []
+    'argc' => 0
+]
+2015-12-24 20:38:56 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "map/map/get-dots".' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Module.php:461
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('map/map/get-dot...', Array)
+#1 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Users/work/domains/blablaflat.dev/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/work/domains/blablaflat.dev/web/index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-24 20:38:56 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'f4f145d66270ba2fd5fcc2c229748237'
+    '_csrf' => '3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7FHBxDdT8289DJVi81G-hagm3FxmUYga\";}'
+    '_identity' => '4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"1Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=f4f145d66270ba2fd5fcc2c229748237; _csrf=3e035d35a87e890c0fe81a3387bfb5d00cfbf3ff11d25e6b92113f6a15ac99aaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227FHBxDdT8289DJVi81G-hagm3FxmUYga%22%3B%7D; _identity=4fd2d2df705425b4a0b68c17d53f9373835de23b917aea88127d4628f3782b95a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%221Uj_p9ch1wXvg4GPJruNdRQZYrAYL65A%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/work/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/work/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '63464'
+    'REDIRECT_URL' => '/map/map/get-dots'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/map/map/get-dots'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1450978736.11
+    'REQUEST_TIME' => 1450978736
+    'argv' => []
+    'argc' => 0
+]

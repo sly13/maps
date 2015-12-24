@@ -38,4 +38,22 @@ class MapController extends BaseController
 
         return $this->render('create', compact('model'));
     }
+
+    public function actionGetDots()
+    {
+        $dots = Map::find()->all();
+        $data = [];
+        /* @var $dot Map */
+        foreach ($dots as $dot) {
+            $item['items'] = [
+                'center' => [$dot->latitude, $dot->longitude],
+                'name' => $dot->type,
+                'preset' => "islands#icon",
+                'iconColor' => "#0095b6",
+                'balloonContent' => $dot->type
+            ];
+            $data[] = $item;
+        }
+        return json_encode($data);
+    }
 }
