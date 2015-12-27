@@ -8,6 +8,7 @@ use Yii;
 
 class MapController extends BaseController
 {
+    public $layout = 'map';
     /**
      * @var $maps MapRepository
      */
@@ -48,7 +49,7 @@ class MapController extends BaseController
             $item['items'] = [
                 'center' => [$dot->latitude, $dot->longitude],
                 'name' => $dot->type,
-                'preset' => "islands#icon",
+                'preset' => "islands#circleDotIcon",
                 'iconColor' => "#0095b6",
                 'balloonContent' => $dot->type
             ];

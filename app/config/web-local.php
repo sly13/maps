@@ -9,7 +9,7 @@ return [
                     'class' => 'yii\authclient\clients\VKontakte',
                     'clientId' => '5148322',
                     'clientSecret' => 'L9NB7DZBjAo5CHYIjvWO',
-                    'scope' => 'email,friends,offline',
+                    'scope' => 'email, friends, offline',
                 ],
             ],
         ],

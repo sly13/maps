@@ -154,13 +154,13 @@ ThemeAsset::register($this);
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <?= Html::img('@web/images/user.jpg', ['class' => 'user-image', 'alt' => 'User Image']) ?>
-                                <span class="hidden-xs"><?= $user->name ?></span>
+                                <span class="hidden-xs"><?= $user->userName ?></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="user-header">
                                     <?= Html::img('@web/images/user.jpg', ['class' => 'img-circle', 'alt' => 'User Image']) ?>
                                     <p>
-                                        <?= $user->name ?> - Web Developer
+                                        <?= $user->userName ?> - Web Developer
                                         <small>Member since Dec. 2015</small>
                                     </p>
                                 </li>
@@ -204,7 +204,7 @@ ThemeAsset::register($this);
                         <?= Html::img('@web/images/user.jpg', ['class' => 'img-circle', 'alt' => 'User Image']) ?>
                     </div>
                     <div class="pull-left info">
-                        <p><?= $user->name ?></p>
+                        <p><?= $user->userName ?></p>
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
                 </div>

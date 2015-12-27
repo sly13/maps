@@ -27,10 +27,10 @@ AppAsset::register($this);
 <div class="wrap">
 
     <?php
-        $menuItems = [
-            ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-        ];
+    $menuItems = [
+        ['label' => 'Главная', 'url' => ['/site/index']],
+        ['label' => 'Contact', 'url' => ['/site/contact']],
+    ];
     ?>
 
     <?php
@@ -47,10 +47,10 @@ AppAsset::register($this);
             'label' => 'Регистрация',
             'url' => ['/auth/sign-up']
         ];
-    $menuItems[] = [
-        'label' => 'Вход',
-        'url' => ['/auth/login']
-    ];
+        $menuItems[] = [
+            'label' => 'Вход',
+            'url' => ['/auth/login']
+        ];
     else :
         $menuItems[] = [
             'label' => 'Админка',
@@ -78,10 +78,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+    <div >
         <?= $content ?>
     </div>
 </div>

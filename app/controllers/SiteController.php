@@ -2,7 +2,10 @@
 
 namespace app\controllers;
 
+use app\models\SocialProfile;
+use Exception;
 use Yii;
+use yii\authclient\ClientInterface;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -51,10 +54,51 @@ class SiteController extends Controller
         ];
     }
 
-    public function successCallback($client)
+    public function successCallback(ClientInterface $client)
+    {
+        /* @var $profile SocialProfile*/
+        if ($profile = $this->findSocialProfile($client)) {
+            Yii::$app->user->login($profile);
+            return $this->redirect(['@map']);
+        }
+
+        return $this->redirect(['auth/login']);
+        // user login or signup comes here
+    }
+
+    /**
+     * Ищет в базе и возвращает авторизующийся социальный профиль.
+     * Если не найден — сохраняет и возвращает.
+     *
+     * @param ClientInterface $client
+     *
+     * @throws Exception
+     * @return SocialProfile
+     */
+    protected function findSocialProfile(ClientInterface $client)
     {
         $attributes = $client->getUserAttributes();
-        // user login or signup comes here
+        if (null === ($profile = SocialProfile::findOne(['socialId' => $attributes['user_id']]))) {
+            $profile = $this->save($attributes);
+        }
+        return $profile;
+    }
+
+    public function save($attributes)
+    {
+        $profile = new SocialProfile();
+        $profile->socialId = (string)$attributes['user_id'];
+        $profile->accessToken = '12345';
+        $profile->userName = $attributes['first_name'] . ' ' . $attributes['last_name'];
+        $profile->userSex = (string)$attributes['sex'];
+        $profile->userAvatarUrl = $attributes['photo'];
+        $profile->userAttributesStorage = json_encode($attributes);
+        $profile->timeCreated = time();
+        if ($profile->save()) {
+            return $profile;
+        } else {
+            throw new Exception("Failed to create social profile record");
+        }
     }
 
 

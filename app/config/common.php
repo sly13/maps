@@ -18,6 +18,7 @@ return [
     'aliases' => [
         '@app' => dirname(__DIR__),
         '@home' => '/site/index',
+        '@map' => 'map/index',
     ],
 
     'bootstrap' => ['log'],
@@ -25,7 +26,7 @@ return [
     'components' => [
         'user' => [
             //'class' => 'app\models\User',
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\models\SocialProfile',
             'enableAutoLogin' => true,
             'loginUrl' => 'auth/login',
         ],
@@ -43,6 +44,7 @@ return [
 
                 '' => 'site/index',
                 '<controller:\w+>' => '<controller>/index',
+                'get-dots' => 'map/get-dots'
             ],
         ],
         'mailer' => [

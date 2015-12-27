@@ -38,13 +38,13 @@ class AuthController extends BaseController
 
     public function actionSignUp()
     {
-
         /* @var $model \app\models\SignUpForm */
         $model = new SignUpForm();
 
-        if($model->load(Yii::$app->request->post()) && $model->validate()){
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $user = $this->users->create($model->attributes, $model->password);
             Yii::$app->getUser()->login($user, Yii::$app->params['user.loginDuration']);
+
             return $this->goHome();
         }
 
