@@ -26,59 +26,9 @@ AppAsset::register($this);
 
 <div class="wrap">
 
-    <?php
-        $menuItems = [
-            ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-        ];
-    ?>
+    <?= $this->render('menu') ?>
 
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'BlablaFlat',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-
-    if (Yii::$app->user->isGuest) :
-        $menuItems[] = [
-            'label' => 'Регистрация',
-            'url' => ['/auth/sign-up']
-        ];
-    $menuItems[] = [
-        'label' => 'Вход',
-        'url' => ['/auth/login']
-    ];
-    else :
-        $menuItems[] = [
-            'label' => 'Админка',
-            'url' => ['/admin']
-        ];
-        $menuItems[] = [
-            'label' => 'Карта',
-            'url' => ['/map']
-        ];
-        $menuItems[] = [
-            'label' => 'Профиль',
-            'url' => ['/profile']
-        ];
-        $menuItems[] = [
-            'label' => 'Выйти (' . Yii::$app->user->identity->userName . ')',
-            'url' => ['/auth/logout'],
-            'linkOptions' => ['data-method' => 'post']
-        ];
-    endif;
-
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems
-    ]);
-    NavBar::end();
-    ?>
-
-    <div class="container">
+    <div class="container-fluid">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -87,7 +37,7 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>

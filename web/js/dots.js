@@ -24,6 +24,27 @@ function init () {
         searchControlProvider: 'yandex#search'
     });
 
+    /*firstButton = new ymaps.control.Button("<img id ='showLeft' src='/images/filter2.png'>");
+
+    myMap.controls.add(firstButton, {float: 'right'});*/
+
+    ButtonLayout = ymaps.templateLayoutFactory.createClass(
+        "<button id='showLeft'>" + "<img src='/images/filter2.png'>" +
+        "{{data.content}}" +
+        "</button>"
+    ),
+
+        button = new ymaps.control.Button({
+            options: {
+                layout: ButtonLayout
+            }
+        });
+
+    myMap.controls.add(button, {
+        float: 'right'
+    });
+
+
     myGeoObject = new ymaps.GeoObject();
     for (var i = 0; i < groups.length; i++) {
         console.log(groups[i].items);

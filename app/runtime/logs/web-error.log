@@ -7392,3 +7392,2776 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2015-12-31 04:24:58 [127.0.0.1][-][culf12v4tl6cb6cnv3hna5sik2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal string offset 'class'' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\helpers\BaseHtml.php:1817
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Object.php(107): yii\bootstrap\NavBar->init()
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\di\Container.php(372): yii\base\Object->__construct()
+#2 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs()
+#3 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build()
+#4 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get()
+#5 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Widget.php(56): yii\BaseYii::createObject()
+#6 D:\OpenServer\domains\blablaflat.dev\app\views\layouts\main.php(44): yii\base\Widget::begin()
+#7 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#8 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#9 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile()
+#10 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent()
+#11 D:\OpenServer\domains\blablaflat.dev\app\controllers\AuthController.php(36): yii\base\Controller->render()
+#12 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\AuthController->actionLogin()
+#13 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#14 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#15 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#16 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#17 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#18 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#19 {main}
+2015-12-31 04:24:58 [127.0.0.1][-][culf12v4tl6cb6cnv3hna5sik2][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'culf12v4tl6cb6cnv3hna5sik2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=culf12v4tl6cb6cnv3hna5sik2'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29427'
+    'REDIRECT_URL' => '/auth/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/auth/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525098.101
+    'REQUEST_TIME' => 1451525098
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:27:42 [127.0.0.1][5][l2bbjij8slsifnob8thdep4i72][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:27:41 [127.0.0.1][5][l2bbjij8slsifnob8thdep4i72][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'l2bbjij8slsifnob8thdep4i72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525165
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '4985574b8f198dff9fd81ceefe773d959f93d18230e9efa8cda09354d6e87a00c515c27fc7f9e259ea2d9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_IF_NONE_MATCH' => '\"21f6-4dbcbc3671780\"'
+    'HTTP_IF_MODIFIED_SINCE' => 'Fri, 03 May 2013 08:01:50 GMT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=l2bbjij8slsifnob8thdep4i72'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29608'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525261.598
+    'REQUEST_TIME' => 1451525261
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:27:42 [127.0.0.1][5][l2bbjij8slsifnob8thdep4i72][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:27:41 [127.0.0.1][5][l2bbjij8slsifnob8thdep4i72][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'l2bbjij8slsifnob8thdep4i72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525165
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '4985574b8f198dff9fd81ceefe773d959f93d18230e9efa8cda09354d6e87a00c515c27fc7f9e259ea2d9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_IF_NONE_MATCH' => '\"7b3-4dce8cb68a980\"'
+    'HTTP_IF_MODIFIED_SINCE' => 'Fri, 17 May 2013 12:05:10 GMT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=l2bbjij8slsifnob8thdep4i72'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29607'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525261.608
+    'REQUEST_TIME' => 1451525261
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:27:42 [127.0.0.1][5][l2bbjij8slsifnob8thdep4i72][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:27:41 [127.0.0.1][5][l2bbjij8slsifnob8thdep4i72][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'l2bbjij8slsifnob8thdep4i72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525165
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '4985574b8f198dff9fd81ceefe773d959f93d18230e9efa8cda09354d6e87a00c515c27fc7f9e259ea2d9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_IF_NONE_MATCH' => '\"87-5282688305507\"'
+    'HTTP_IF_MODIFIED_SINCE' => 'Thu, 31 Dec 2015 00:14:02 GMT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=l2bbjij8slsifnob8thdep4i72'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29605'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525261.608
+    'REQUEST_TIME' => 1451525261
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:28:57 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:28:57 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29729'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525337.286
+    'REQUEST_TIME' => 1451525337
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:28:57 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:28:57 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29719'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525337.286
+    'REQUEST_TIME' => 1451525337
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:28:57 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:28:57 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29727'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525337.285
+    'REQUEST_TIME' => 1451525337
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29864'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525402.329
+    'REQUEST_TIME' => 1451525402
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29865'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525402.327
+    'REQUEST_TIME' => 1451525402
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/map'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29863'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525402.329
+    'REQUEST_TIME' => 1451525402
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:27 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:27 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525427.135
+    'REQUEST_TIME' => 1451525427
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:27 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:27 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29912'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525427.136
+    'REQUEST_TIME' => 1451525427
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:27 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:27 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29911'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525427.136
+    'REQUEST_TIME' => 1451525427
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:33 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:33 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29912'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525433.041
+    'REQUEST_TIME' => 1451525433
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:33 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:33 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525433.041
+    'REQUEST_TIME' => 1451525433
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:33 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:33 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29911'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525433.041
+    'REQUEST_TIME' => 1451525433
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:41 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:41 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29912'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525441.445
+    'REQUEST_TIME' => 1451525441
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:41 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:41 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29911'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525441.445
+    'REQUEST_TIME' => 1451525441
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:41 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:41 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525441.445
+    'REQUEST_TIME' => 1451525441
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:44 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:44 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29912'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525444.37
+    'REQUEST_TIME' => 1451525444
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:44 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:44 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29979'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525444.37
+    'REQUEST_TIME' => 1451525444
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:44 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:44 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525444.369
+    'REQUEST_TIME' => 1451525444
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:51 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:51 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525451.31
+    'REQUEST_TIME' => 1451525451
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:51 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:51 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29979'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525451.319
+    'REQUEST_TIME' => 1451525451
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:30:51 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:51 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29911'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525451.319
+    'REQUEST_TIME' => 1451525451
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:00 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:59 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29979'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525459.757
+    'REQUEST_TIME' => 1451525459
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:00 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:59 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '30038'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525459.758
+    'REQUEST_TIME' => 1451525459
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:00 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:30:59 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/site/contact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525459.758
+    'REQUEST_TIME' => 1451525459
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:09 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:31:09 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29911'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525469.371
+    'REQUEST_TIME' => 1451525469
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:09 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:31:09 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '29908'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525469.371
+    'REQUEST_TIME' => 1451525469
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:09 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:31:09 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '30038'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525469.371
+    'REQUEST_TIME' => 1451525469
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:34 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/modernizr.custom.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/modernizr.cu...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:31:34 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '30094'
+    'REDIRECT_URL' => '/js/modernizr.custom.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/modernizr.custom.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525494.335
+    'REQUEST_TIME' => 1451525494
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:34 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/cbpHorizontalSlideOutMenu.min.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/cbpHorizonta...', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:31:34 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '30103'
+    'REDIRECT_URL' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/cbpHorizontalSlideOutMenu.min.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525494.371
+    'REQUEST_TIME' => 1451525494
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:31:34 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/menu.js".' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('js/menu.js', Array)
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#2 {main}
+2015-12-31 04:31:34 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '30104'
+    'REDIRECT_URL' => '/js/menu.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/menu.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451525494.371
+    'REQUEST_TIME' => 1451525494
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:49:50 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\filters\VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(263): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('logout', Array)
+#6 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/logout', Array)
+#7 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#9 {main}
+2015-12-31 04:49:50 [127.0.0.1][5][njkdp89m8aiioqjqgtr2akgbu4][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'njkdp89m8aiioqjqgtr2akgbu4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'yii\\authclient\\clients\\VKontakte_58ce06d580d84296fa55c9f1e3e0899b86588444_token' => yii\authclient\OAuthToken#1
+    (
+        [tokenParamKey] => 'access_token'
+        [tokenSecretParamKey] => 'oauth_token_secret'
+        [createTimestamp] => 1451525273
+        [yii\authclient\OAuthToken:_expireDurationParamKey] => 'expires_in'
+        [yii\authclient\OAuthToken:_params] => [
+            'access_token' => '864db5e1abd6e52a31c09cc44d158b4ec4b202bdb8fd02d38d8321395aa2b9d05c6fdc7754f5820ca2cb9'
+            'expires_in' => 0
+            'user_id' => 195022348
+        ]
+    )
+    '__id' => '5'
+    '__captcha/site/captcha' => 'sibgxo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=njkdp89m8aiioqjqgtr2akgbu4'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '31385'
+    'REDIRECT_URL' => '/site/logout'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site/logout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451526590.3
+    'REQUEST_TIME' => 1451526590
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:52:29 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '',' (T_CONSTANT_ENCAPSED_STRING), expecting ']'' in D:\OpenServer\domains\blablaflat.dev\app\views\layouts\menu.php:31
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#1 D:\OpenServer\domains\blablaflat.dev\app\views\layouts\main.php(29): yii\base\View->render()
+#2 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#3 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#4 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile()
+#5 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent()
+#6 D:\OpenServer\domains\blablaflat.dev\app\controllers\SiteController.php(108): yii\base\Controller->render()
+#7 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#8 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#9 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#10 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#11 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#12 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#13 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#14 {main}
+2015-12-31 04:52:28 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'rmmpegn8snejddo5ntqtk3pnj2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=rmmpegn8snejddo5ntqtk3pnj2'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '31554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451526748.666
+    'REQUEST_TIME' => 1451526748
+    'argv' => []
+    'argc' => 0
+]
+2015-12-31 04:53:36 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'label' (T_STRING), expecting ']'' in D:\OpenServer\domains\blablaflat.dev\app\views\layouts\menu.php:40
+Stack trace:
+#0 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#1 D:\OpenServer\domains\blablaflat.dev\app\views\layouts\main.php(29): yii\base\View->render()
+#2 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#3 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#4 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile()
+#5 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent()
+#6 D:\OpenServer\domains\blablaflat.dev\app\controllers\SiteController.php(108): yii\base\Controller->render()
+#7 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#8 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#9 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#10 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#11 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#12 D:\OpenServer\domains\blablaflat.dev\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#13 D:\OpenServer\domains\blablaflat.dev\web\index.php(16): yii\base\Application->run()
+#14 {main}
+2015-12-31 04:53:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'd36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"c83zdex5myfEIOR1Rapiep3nPpL8rRiS\";}'
+    'PHPSESSID' => 'rmmpegn8snejddo5ntqtk3pnj2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'blablaflat.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36'
+    'HTTP_REFERER' => 'http://blablaflat.dev/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=d36bb5783d364d66d56d5a11fc7d7308277af64bfab0ac750c0c414eed916b36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22c83zdex5myfEIOR1Rapiep3nPpL8rRiS%22%3B%7D; PHPSESSID=rmmpegn8snejddo5ntqtk3pnj2'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP-5.6\\ext;d:\\openserver\\modules\\php\\PHP-5.6\\pear;d:\\openserver\\modules\\php\\PHP-5.6\\pear\\bin;d:\\openserver\\modules\\php\\PHP-5.6;d:\\openserver\\modules\\imagemagick;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\git;d:\\openserver\\modules\\git\\bin;d:\\openserver\\modules\\git\\mingw\\bin;d:\\openserver\\modules\\git\\cmd;d:\\openserver\\modules\\database\\MySQL-5.6\\bin;d:\\openserver\\modules\\redis\\Redis-2.8;d:\\openserver\\modules\\http\\Apache-2.4\\bin;d:\\openserver\\modules\\http\\Apache-2.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Git\\cmd;D:\\OpenServer\\modules\\php\\PHP-5.6;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs\\node_modules\\npm;C:\\Program Files (x86)\\IDM Computer Solutions\\UltraEdit;C:\\Users\\vadik_b52\\AppData\\Roaming\\npm;C:\\Users\\vadik_b52\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32)'
+    'SERVER_NAME' => 'blablaflat.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blablaflat.dev/web'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blablaflat.dev/web/index.php'
+    'REMOTE_PORT' => '31628'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1451526815.701
+    'REQUEST_TIME' => 1451526815
+    'argv' => []
+    'argc' => 0
+]

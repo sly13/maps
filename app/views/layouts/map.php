@@ -10,6 +10,7 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -26,67 +27,28 @@ AppAsset::register($this);
 
 <div class="wrap">
 
-    <?php
-    $menuItems = [
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-    ];
-    ?>
+    <?= $this->render('menu') ?>
 
-    <?php
-    NavBar::begin([
-        'brandLabel' => 'BlablaFlat',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-
-    if (Yii::$app->user->isGuest) :
-        $menuItems[] = [
-            'label' => 'Регистрация',
-            'url' => ['/auth/sign-up']
-        ];
-        $menuItems[] = [
-            'label' => 'Вход',
-            'url' => ['/auth/login']
-        ];
-    else :
-        $menuItems[] = [
-            'label' => 'Админка',
-            'url' => ['/admin']
-        ];
-        $menuItems[] = [
-            'label' => 'Карта',
-            'url' => ['/map']
-        ];
-        $menuItems[] = [
-            'label' => 'Профиль',
-            'url' => ['/profile']
-        ];
-        $menuItems[] = [
-            'label' => 'Выйти (' . Yii::$app->user->identity->userName . ')',
-            'url' => ['/auth/logout'],
-            'linkOptions' => ['data-method' => 'post']
-        ];
-    endif;
-
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems
-    ]);
-    NavBar::end();
-    ?>
-
-    <div >
+    <div class="container-fluid" style="padding-left: 0;">
         <?= $content ?>
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1" style="margin-top: 50px">
+    <div class="filter">
+        <p>Форма поиска</p>
+        <input type="text" class="form-control"> <br>
+        <input type="text" class="form-control"><br>
 
+        <button type="submit" class="btn btn-primary"> Поиск
+        </button>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
