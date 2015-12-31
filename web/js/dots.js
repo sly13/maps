@@ -19,7 +19,7 @@ function init () {
     var myMap = new ymaps.Map('map', {
         center: [55.188977 , 30.247075],
         zoom: 12,
-        //controls: ['geolocationControl']
+        controls: ['zoomControl', 'geolocationControl', 'typeSelector', 'fullscreenControl']
     }, {
         searchControlProvider: 'yandex#search'
     });

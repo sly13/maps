@@ -59,7 +59,8 @@ class SiteController extends Controller
         /* @var $profile SocialProfile*/
         if ($profile = $this->findSocialProfile($client)) {
             Yii::$app->user->login($profile);
-            return $this->redirect(['@map']);
+            return true;
+            //return $this->redirect(['@map']);
         }
 
         return $this->redirect(['auth/login']);
