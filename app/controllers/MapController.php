@@ -8,25 +8,39 @@ use Yii;
 
 class MapController extends BaseController
 {
+    /*
+     * @var string
+     */
     public $layout = 'map';
+
     /**
      * @var $maps MapRepository
      */
     public $maps;
 
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->maps = new MapRepository();
     }
 
+    /**
+     * @return string
+     */
     public function actionIndex()
     {
         $dots = new Map();
         return $this->render('index', compact('dots'));
     }
 
+    /**
+     * @return string
+     */
     public function actionCreate()
     {
+        $this->layout = 'main';
         $model = new MapForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
@@ -40,18 +54,22 @@ class MapController extends BaseController
         return $this->render('create', compact('model'));
     }
 
+    /**
+     * @return string
+     */
     public function actionGetDots()
     {
-        $dots = Map::find()->all();
+        $points = Map::find()->all();
         $data = [];
-        /* @var $dot Map */
-        foreach ($dots as $dot) {
-            $item['items'] = [
-                'center' => [$dot->latitude, $dot->longitude],
-                'name' => $dot->type,
-                'preset' => "islands#circleDotIcon",
+        /* @var $point Map */
+        foreach ($points as $point) {
+            $item= [
+                'center' => [$point->latitude, $point->longitude],
+                'name' => $point->type,
+                'preset' => "3islands#circleDotIcon",
                 'iconColor' => "#0095b6",
-                'balloonContent' => $dot->type
+                'balloonContent' => $point->type,
+                'image' => '/images/'. $point->type .'.gif'
             ];
             $data[] = $item;
         }

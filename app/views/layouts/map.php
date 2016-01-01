@@ -10,7 +10,7 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
-
+$this->title = 'Карта';
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -29,27 +29,24 @@ AppAsset::register($this);
 
     <?= $this->render('menu') ?>
 
-    <div class="container-fluid" style="padding-left: 0;">
+    <div class="container-fluid main-content" style="padding-left: 0;">
         <?= $content ?>
     </div>
 </div>
 
-<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1" style="margin-top: 50px">
+<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="map-filter" style="margin-top: 50px">
     <div class="filter">
         <p>Форма поиска</p>
         <input type="text" class="form-control"> <br>
         <input type="text" class="form-control"><br>
 
-        <button type="submit" class="btn btn-primary"> Поиск
-        </button>
+        <button type="submit" class="btn btn-primary"> Поиск </button>
     </div>
-
 </div>
 
 <footer class="footer">
     <div class="container-fluid">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; blablaflat.by <?= date('Y') ?></p>
     </div>
 </footer>
 

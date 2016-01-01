@@ -40,4 +40,20 @@ class MapForm extends Model
         return ['latitude', 'longitude', 'type'];
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'userId' => 'User ID',
+            'type' => 'Тип события',
+            'latitude' => 'Latitude',
+            'longitude' => 'Longitude',
+            'timeCreated' => 'Time Created',
+            'timeUpdated' => 'Time Visited',
+        ];
+    }
+
 }

@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+    var menuLeft = document.getElementById( 'map-filter' ),
 
     body = document.body;
     $('.showLeft').on('click', function(){
@@ -14,10 +14,4 @@ $( document ).ready(function() {
             classie.toggle( showLeft, 'disabled' );
         }
     }
-});
-
-$( document ).load(function() {
-    $('#showLeft').on('click', function(){
-        alert();
-    });
 });

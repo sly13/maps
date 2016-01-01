@@ -19,6 +19,7 @@ return [
         '@app' => dirname(__DIR__),
         '@home' => '/site/index',
         '@map' => 'map/index',
+        '@runtimePath' => dirname(dirname(__DIR__)) . '/runtime',
     ],
 
     'bootstrap' => ['log'],

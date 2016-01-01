@@ -57,20 +57,4 @@ class Map extends \yii\db\ActiveRecord
             [['timeCreated', 'timeUpdated'], 'safe']
         ];
     }
-
-    /**
-     * @inheritdoc
-     */
-    public function attributeLabels()
-    {
-        return [
-            'id' => 'ID',
-            'userId' => 'User ID',
-            'type' => 'Type',
-            'latitude' => 'Latitude',
-            'longitude' => 'Longitude',
-            'timeCreated' => 'Time Created',
-            'timeUpdated' => 'Time Visited',
-        ];
-    }
 }

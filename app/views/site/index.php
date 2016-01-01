@@ -4,10 +4,5 @@
 
 use yii\bootstrap\ActiveForm;
 
-$this->title = 'My Yii Application';
-
+$this->title = 'Blablaflat';
 ?>
-
-
-
-

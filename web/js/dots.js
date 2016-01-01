@@ -1,7 +1,5 @@
 // Группы объектов
-
 var groups;
-
 $.ajax({
     'type' : 'GET',
     'url' : 'get-dots',
@@ -11,48 +9,50 @@ $.ajax({
     }
 });
 
-
-
 var latitude,longitude;
 function init () {
 
     var myMap = new ymaps.Map('map', {
         center: [55.188977 , 30.247075],
         zoom: 12,
-        controls: ['zoomControl', 'geolocationControl', 'typeSelector', 'fullscreenControl']
+        controls: ['zoomControl', 'typeSelector', 'fullscreenControl']
     }, {
         searchControlProvider: 'yandex#search'
     });
 
-    /*firstButton = new ymaps.control.Button("<img id ='showLeft' src='/images/filter2.png'>");
-
-    myMap.controls.add(firstButton, {float: 'right'});*/
-
-    ButtonLayout = ymaps.templateLayoutFactory.createClass(
-        "<button id='showLeft'>" + "<img src='/images/filter2.png'>" +
-        "{{data.content}}" +
+    /*ButtonLayout = ymaps.templateLayoutFactory.createClass(
+        "<button class='showLeft'>" + "<img src='/images/filter2.png'>" +
         "</button>"
     ),
 
-        button = new ymaps.control.Button({
-            options: {
-                layout: ButtonLayout
-            }
-        });
+    button = new ymaps.control.Button({
+        options: {
+            layout: ButtonLayout
+        }
+    });
 
     myMap.controls.add(button, {
         float: 'right'
-    });
-
+    });*/
 
     myGeoObject = new ymaps.GeoObject();
     for (var i = 0; i < groups.length; i++) {
-        console.log(groups[i].items);
-        myMap.geoObjects.add(new ymaps.Placemark(groups[i].items.center, {
-            balloonContent: groups[i].items.balloonContent
+        console.log(groups[i]);
+        placeMarker = new ymaps.Placemark(groups[i].center, {
+            balloonContent: groups[i].balloonContent
         }, {
-            preset: groups[i].items.preset,
-            iconColor: groups[i].items.color
-        }));
+            preset: groups[i].preset,
+            iconColor: groups[i].color,
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: groups[i].image,
+                // Размеры метки.
+                iconImageSize: [30, 42],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                //iconImageOffset: [-3, -42]
+        });
+
+        myMap.geoObjects.add(placeMarker);
     }
 }

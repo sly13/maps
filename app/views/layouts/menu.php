@@ -17,38 +17,53 @@ NavBar::begin([
 ]);
 
 if (Yii::$app->user->isGuest) :
-    /*$menuItems[] = [
-        'label' => 'Регистрация',
-        'url' => ['/auth/sign-up']
-    ];*/
-    /*$menuItems[] = [
-        'label' => 'Вход',
-        'url' => ['/auth/login']
-    ];*/
     $menuItems[] = [
         'label' =>  Html::img('@web/images/vk7.png'),
         'url' => ['/site/auth?authclient=vk'],
     ];
 else :
     $menuItems[] = [
-        'label' => 'Админка',
-        'url' => ['/admin']
-    ];
-    $menuItems[] = [
         'label' => 'Карта',
         'url' => ['/map']
     ];
+
     $menuItems[] = [
-        'label' => 'Профиль',
-        'url' => ['/profile']
+        'label' => Html::img('@web/images/plus.png'),
+        'url' => ['/map/create']
     ];
+
+    if (Yii::$app->controller->id=='map' && Yii::$app->controller->action->id =='index')
+        $menuItems[] = [
+            'label' => '<span class="showLeft">' . Html::img('@web/images/filter.png'). '</span>',
+        ];
+
     $menuItems[] = [
-        'label' => '<button class="showLeft">' . Html::img('@web/images/filter2.png'). '</button>',
-    ];
-    $menuItems[] = [
-        'label' => 'Выйти (' . Yii::$app->user->identity->userName . ')',
-        'url' => ['/auth/logout'],
-        'linkOptions' => ['data-method' => 'post']
+        'label' =>  Yii::$app->user->identity->userName,
+        'items' => [
+            [
+                'label' => 'Профиль',
+                'url' => '/profile',
+            ],
+                '<li class="divider"> </li>',
+            [
+                'label' => 'Мои флэты',
+                'url' => '/flat',
+            ],
+            [
+                'label' => 'Мои встречи',
+                'url' => '/meeting',
+            ],
+            [
+                'label' => 'Мои покатушки',
+                'url' => '/drivning',
+            ],
+                '<li class="divider"> </li>',
+            [
+                'label' => 'Выйти',
+                'url' => ['/auth/logout'],
+                'linkOptions' => ['data-method' => 'post']
+            ]
+        ],
     ];
 endif;
 
@@ -59,3 +74,4 @@ echo Nav::widget([
 ]);
 NavBar::end();
 ?>
+

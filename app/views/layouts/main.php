@@ -4,13 +4,12 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
@@ -28,7 +27,7 @@ AppAsset::register($this);
 
     <?= $this->render('menu') ?>
 
-    <div class="container-fluid">
+    <div class="container-fluid main-content">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -38,9 +37,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container-fluid">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-left">&copy; blablaflat.by <?= date('Y') ?></p>
     </div>
 </footer>
 

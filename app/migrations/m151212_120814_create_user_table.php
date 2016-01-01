@@ -8,19 +8,19 @@ class m151212_120814_create_user_table extends Migration
     public function up()
     {
         $this->createTable('user',[
-            'id' => 'INT(11) UNSIGNED NOT NULL AUTO_INCREMENT',
-            'group' => 'VARCHAR(10) NOT NULL',
-            'name' => 'VARCHAR(100) NOT NULL',
-            'email' => 'VARCHAR(100) NOT NULL',
-            'passwordHash' => 'VARCHAR(100) NOT NULL',
-            'authKey' => 'VARCHAR(32) NOT NULL',
-            'timeCreated' => 'TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP',
-            'timeVisited' => 'TIMESTAMP NULL DEFAULT NULL',
-            'PRIMARY KEY (id)',
-            'UNIQUE KEY (email)'
+            'id' => 'int(11) unsigned not null auto_increment',
+            'group' => 'varchar(10) not null',
+            'name' => 'varchar(100) not null',
+            'email' => 'varchar(100) not null',
+            'passwordHash' => 'varchar(100) not null',
+            'authKey' => 'varchar(32) not null',
+            'timeCreated' => 'timestamp not null default current_timestamp',
+            'timeVisited' => 'timestamp null default null',
+            'primary key (id)',
+            'unique key (email)'
         ]);
     }
-
+    
     public function down()
     {
         $this->dropTable('user');

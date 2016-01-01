@@ -24,12 +24,12 @@ return [
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error'],
-                    'logFile' => '@app/runtime/logs/web-error.log'
+                    'logFile' => '@runtimePath/logs/web-error.log'
                 ],
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['warning'],
-                    'logFile' => '@app/runtime/logs/web-warning.log'
+                    'logFile' => '@runtimePath/logs/web-warning.log'
                 ],
             ],
         ],
