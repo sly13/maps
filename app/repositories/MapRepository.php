@@ -7,6 +7,7 @@ class MapRepository extends ActiveRepository
 {
     /**
      * @param $data array
+     * @return Map
      */
     public function create($data)
     {
@@ -14,5 +15,6 @@ class MapRepository extends ActiveRepository
         $map->setAttributes($data);
         $this->saveOrFail($map);
 
+        return $map;
     }
 }

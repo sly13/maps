@@ -1,0 +1,22 @@
+{
+  "name": "blablaflat",
+  "version": "0.0.1",
+  "authors": [
+    "vadimsemenko@gmail.com"
+  ],
+  "description": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ion.rangeslider": "ionrangeslider#~2.1.2",
+    "moment": "~2.10.6",
+    "iCheck": "jquery-icheck#1.0.2"
+  }
+}

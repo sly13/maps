@@ -28,8 +28,17 @@ else :
     ];
 
     $menuItems[] = [
-        'label' => Html::img('@web/images/plus.png'),
-        'url' => ['/map/create']
+        'label' => Html::img('@web/images/menu-flat.png', ['style' => 'width : 19px']),
+        'url' => ['/map/flat']
+    ];
+
+    $menuItems[] = [
+        'label' => Html::img('@web/images/menu-meeting.png', ['style' => 'width : 19px']),
+        'url' => ['/map/meeting']
+    ];
+    $menuItems[] = [
+        'label' => Html::img('@web/images/menu-driving.png', ['style' => 'width : 19px']),
+        'url' => ['/map/driving']
     ];
 
     if (Yii::$app->controller->id=='map' && Yii::$app->controller->action->id =='index')

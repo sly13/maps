@@ -8,13 +8,13 @@ use yii\behaviors\TimestampBehavior;
 /**
  * This is the model class for table "map".
  *
- * @property integer $id
- * @property integer $userId
- * @property string $type
- * @property double $latitude
- * @property double $longitude
- * @property string $timeCreated
- * @property string $timeUpdated
+ * @property string $id
+ * @property string $latitude
+ * @property string $longitude
+ *
+ * @property Driving[] $drivings
+ * @property Flat[] $flats
+ * @property Meeting[] $meetings
  */
 class Map extends \yii\db\ActiveRecord
 {
@@ -27,34 +27,37 @@ class Map extends \yii\db\ActiveRecord
     }
 
     /**
-     * @return array
-     */
-    public function behaviors()
-    {
-        return [
-            'timestamp' => [
-                'class' => TimestampBehavior::className(),
-                'attributes' => [
-                    static::EVENT_BEFORE_INSERT => ['timeCreated', 'timeUpdated'],
-                ],
-                'value' => function () {
-                    return date('Y-m-d H:i:s');
-                },
-            ]
-        ];
-    }
-
-    /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['userId', 'latitude', 'longitude'], 'required'],
-            [['userId'], 'integer'],
-            [['type'], 'string'],
-            [['latitude', 'longitude'], 'number'],
-            [['timeCreated', 'timeUpdated'], 'safe']
+            [['latitude', 'longitude'], 'required'],
+            [['latitude', 'longitude'], 'string', 'max' => 250]
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getDrivings()
+    {
+        return $this->hasMany(Driving::className(), ['mapId' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getFlats()
+    {
+        return $this->hasMany(Flat::className(), ['mapId' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMeetings()
+    {
+        return $this->hasMany(Meeting::className(), ['mapId' => 'id']);
     }
 }

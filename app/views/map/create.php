@@ -1,5 +1,5 @@
 <?php
-/* @var $article  app\models\Map */
+/* @var $model  app\models\form\FlatForm */
 /* @var $this     yii\web\View */
 
 $this->title = 'Карта - Новое событие';
